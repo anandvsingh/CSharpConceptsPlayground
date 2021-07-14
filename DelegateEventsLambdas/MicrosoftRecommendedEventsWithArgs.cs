@@ -38,7 +38,7 @@ namespace DelegateEventsLambdas
                     Exploded?.Invoke(this, new CarEvents("The Car is dead"));
                     return;
                 }
-                if (MaxSpeed - CurrentSpeed <= 10){
+                if (MaxSpeed - CurrentSpeed <= 50){
                     AboutToBlow?.Invoke(this, new CarEvents($"Careful its close current speed: {CurrentSpeed}, maxSpeed: {MaxSpeed}"));   
                     return;
                 }

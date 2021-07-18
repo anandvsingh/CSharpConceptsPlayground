@@ -12,6 +12,9 @@ namespace MultiThreadedParallelAndAsyncProgramming
             //AsynchronousDelegate();
             //AsynchronousDelegateAllProps();
             ManualThreadAndParametrizedThreadStart();
+            MyEbookReader.GetBook();
+            Console.WriteLine("Downloading book...");
+            Console.ReadLine();
         }
 
         private static void SynchronousThreadTest()
